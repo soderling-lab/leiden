@@ -7,12 +7,18 @@ This is a wrapper script around `vtraag's` [Leiden Algorithm](https://github.com
 
 ```bash
 
-# cluster a graph with the surprise algorithm
+# get a graph
+wget https://github.com/twesleyb/leiden/raw/master/data/adjm.zip
+
+unzip adjm && cd adjm/
+
+# cluster the graph with the leiden algorithm and surprise
 leiden adjm.csv -q Surprise 
 
-# NOTE: currently only supports a single resolution!
-
+# or try the CPM algorithm
 leiden adjm.csv -q CPM -g 1
+
+# NOTE: currently only supports a single resolution!
 ```
 
 ## Dependencies
