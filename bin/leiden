@@ -298,7 +298,7 @@ for i in range(len(adjms)):
     if p.pop('multi_resolution') is True:
         # multiresolution methods:
         # NOTE: currently only supports analyzing a single resolution
-        p.update({'resolution_parameter' : args['gamma']})
+        p.update({'resolution_parameter' : args['gamma'][0]})
         partition = leidenalg.find_partition(**p)
         optimiser = leidenalg.Optimiser()
         diff = optimiser.optimise_partition(partition,n_iterations=args['niter'])
