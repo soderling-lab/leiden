@@ -3,7 +3,7 @@ _cluster graph(s) with the leiden algorithm_
 
 ## Usage
 
-This is a wrapper script around `vtraag's` [Leiden Algorithm](https://github.com/vtraag/leidenalg). Put this script in your path, and then you can call from anywhere!
+This is a wrapper script around `vtraag's` [Leiden Algorithm](https://github.com/vtraag/leidenalg). Put this script in your path, and then you can call it from anywhere!
 
 ```bash
 
