@@ -3,7 +3,9 @@ _cluster graph(s) with the leiden algorithm_
 
 ## Usage
 
-This is a wrapper script around `vtraag's` [Leiden Algorithm](https://github.com/vtraag/leidenalg). Put this script in your path, and then you can call it from anywhere!
+This is a wrapper script around `vtraag's` [Leiden
+Algorithm](https://github.com/vtraag/leidenalg). Put this script in your path,
+and then you can call it from anywhere!
 
 ```bash
 
@@ -22,6 +24,10 @@ leiden adjm.csv -q CPM -g 1
 ```
 
 ## Dependencies
-I recommend using a virtual environment such as conda:
-* leidenalg -- `conda install -c conda-forge leidenalg`
-* igraph -- `conda install -c conda-forge leidenalg`
+I recommend using a virtual environment such as `conda`. Then insure you have
+installed the following python dependencies:
+* _leidenalg_ 
+* _igraph_
+```
+conda install -c conda-forge igraph leidenalg
+```
