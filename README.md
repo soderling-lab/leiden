@@ -26,7 +26,8 @@ leiden adjm.csv -q CPM -g 1
 ![iPSD](./example.png)
 > Clustering of the iPSD protein-protein interaction graph from
 > [Uezu2016](https://github.com/soderling-lab/Uezu2016)[2] using three different
-> leidenalg methods, Modularity, Surprise, and CPM.
+> leidenalg methods, Modularity, Surprise, and CPM. The networks are visualized
+> using [Cytoscape](https://cytoscape.org/).
 
 
 ## Dependencies
@@ -47,6 +48,6 @@ Traag, V.A., Waltman. L., Van Eck, N.-J. (2018). _Scientific reports_, 9(1), 523
 
 __[2]__ Identification of an Elaborate Complex Mediating Postsynaptic Inhibition.  
 Akiyoshi Uezu, Daniel J. Kanak, Tyler W.A. Bradshaw, Erik J. Soderblom, 
-Christina M. Catavero, Alain C. Burette, Richard J. Weinberg, and Scott H. Soderling.  
+Christina M. Catavero, Alain C. Burette, Richard J. Weinberg, and Scott H. Soderling.
 _Science_, 2016 Sep 9; 353(6304): 1123–1129. 
 [DOI: 10.1126/science.aag0821](https://science.sciencemag.org/node/683771.full)  
