@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# FIXME: if CPM only one resolution is anlyzed -- add capability to loop through
+# FIXME: if CPM only one resolution is analyzed -- add capability to loop through
 # resolution range
 
 '''
@@ -31,7 +31,7 @@ usage:
     leiden [adjm] [quality] [OPTIONS]
 
 input:
-    * adjm: str, filepath to one or more input adjacency matrices csv files.
+    * adjm: str, file path to one or more input adjacency matrices csv files.
     * quality: str, Leiden alg quality metric for optimization of the graph(s)
 output:
     * [output_name]_partition.csv
@@ -296,7 +296,7 @@ for i in range(len(adjms)):
     p = params[i].copy() 
 
     if p.pop('multi_resolution') is True:
-        # multiresolution methods:
+        # multi-resolution methods:
         # NOTE: currently only supports analyzing a single resolution
         p.update({'resolution_parameter' : args['gamma'][0]})
         partition = leidenalg.find_partition(**p)
